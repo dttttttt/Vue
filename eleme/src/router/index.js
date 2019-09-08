@@ -56,8 +56,7 @@ const router = new Router({
       path:'/post',
       component:post
     }
-  ],
-  mode:"history"
+  ]
 }
 )
 
