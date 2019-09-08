@@ -1,19 +1,23 @@
 <template>
 <div >
-  <HomeHeader></HomeHeader>
+  <!-- <homeheader></homeheader> -->
+  <homesearch></homesearch>
   <homeswiper></homeswiper>
   <homefilternav></homefilternav>
   <homefood></homefood>
-  <homeshopcart></homeshopcart>
   <homegoods></homegoods>
+  <homeshopcart></homeshopcart>
+  <!-- <homegoods></homegoods> -->
 </div>
   
 </template>
 
 <script>
+import homesearch from '../components/home/homesearch'
 
 import homeheader from '../components/home/homeheader'
 import homeswiper from '../components/home/homeswiper'
+
 //import homeadvertisement from '../components/home/homeadvertisement'
 import homefilternav from '../components/home/homefilternav'
 import homefood from '../components/home/homefood'
@@ -25,7 +29,8 @@ import homeshopcart from '../components/home/homeshopcart'
 
 export default {
     components:{
-        "HomeHeader":homeheader ,
+        homesearch ,
+        // homeheader,
         homeswiper,
         homefilternav,
         homefood,

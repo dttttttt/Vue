@@ -9,6 +9,19 @@ Mock.mock('/login', (options) => {
     return options.body
   })
 
+
+  Mock.mock('/search1',{
+    'img':  "https://cube.elemecdn.com/4/70/cb4d3121b4e2a394d9d70c534995ajpeg.jpeg?x-oss-process=image/format,webp/resize,w_218,h_218,m_fixed",
+
+     'content':"测试搜索功能"
+  
+  })
+  Mock.mock('/search',{
+  'img':'',
+     'content':""
+  
+  })
+
   Mock.mock('/storename',{
     "array|1":[
         "生鲜传奇（七彩路店）",

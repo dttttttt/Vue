@@ -2,9 +2,9 @@
     <div class="log">
      <img src="//shadow.elemecdn.com/faas/h5/static/logo.ba876fd.png" alt="">
      <section>
-         <input id='user' class="i" type="user" placeholder="大量后台知识，未完成">
+         <input id='user' class="i" type="user" placeholder="node相关知识，暂未完成">
      </section>
-     <input id='password' type="password" placeholder="大量后台知识，未完成">
+     <input id='password' type="password" placeholder="">
      <p>新用户登录即自动注册，并表示已同意<a href="">《用户服务协议》</a>和<a>《隐私权政策》</a></p>
      <button id="login" class="b1" >登录</button>
      <router-link to="/post"><button class="b2">注册</button></router-link>

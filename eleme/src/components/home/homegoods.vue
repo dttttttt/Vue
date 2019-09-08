@@ -8,9 +8,9 @@
             <div class="goods-price">
                 <span class="span1">¥20</span>
                 <span class="goods-count">
-                <span class="span2" @click="minus">--</span>
+                <span class="span2" @click.prevent="minus">--</span>
                 <span class="span3">{{$store.state.count}}</span>
-                <span class="span4" @click="add">+</span>
+                <span class="span4" @click.prevent="add">+</span>
                 </span>
             </div>
 

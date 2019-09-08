@@ -7,7 +7,9 @@ import axios from 'axios'
 import store from './store/index.js'
 import './mock/mock.js'
 
-Vue.prototype.$axios = axios
+
+//所有的组件都继承自Vue的原型，把axios方法赋值到vue的原型中，vue的实例就能使用axios了。
+Vue.prototype.$axios = axios  
 
 Vue.config.productionTip = false
 //js 

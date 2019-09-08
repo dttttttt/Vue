@@ -35,7 +35,8 @@ export default {
     display: flex;
     font-size:2.666vw;
     color: #fff;
-    position: fixed;
+    /* position: fixed; */
+    /* margin-top:1vw; */
     bottom: 11.2vw
 }
 .shopcart-img{

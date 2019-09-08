@@ -6,23 +6,23 @@
         <div class="shopwrapper">
             <div class="shop-basic-info-line">
                <span class="shop-basic-info-brand-tag"></span>
-               <span class="name">mock模拟获取后台数据</span>
+               <span class="name">搜索功能</span>
             </div>
             <div class="xx">
                <div class="rate-star-img"></div>
                <div class="shop-basic-info-rating">4.7</div>
-               <div class="shop-month-sale">月售 {{sale}}</div>
+               <div class="shop-month-sale">月售 506</div>
                <div class="shop-basic-info-fengniao-icon">蜂鸟专送</div>
             </div>
             <div class="x">
-                <div>起送 ￥{{price}} </div>
+                <div>起送 ￥20 </div>
                 <div>
                    <span style="margin-left:10px">券后免配送费</span> 
-                   <span class="takeout-cost-line-through">￥{{saleprice}}</span>
+                   <span class="takeout-cost-line-through">￥3</span>
                 </div>
                 <div>
                    <span style="margin-left:25px">2.2km</span>
-                   <span>{{time}}分钟</span>
+                   <span>48分钟</span>
                 </div>
             </div>
             <div class="tag-wrapper">
@@ -36,60 +36,12 @@
         </div>
     </div>
 </template>
-
-<script>
-
-export default {
-   data(){
-    return{
-      text:[],
-      sale:[],
-      price:[],
-      saleprice:[],
-      time:[],
-      img:[]
-    }
-  },
- 
-  mounted(){
-    this.$axios.get('/storename').then((res)=>{
-      if(res.status === 200) {
-        this.text= res.data.array
-      }
-    })
-
-    this.$axios.get('/sale').then((res)=>{
-      if(res.status === 200) {
-        this.sale= res.data.sale
-      }
-    })
-    this.$axios.get('/price').then((res)=>{
-      if(res.status === 200) {
-        this.price= res.data.price
-      }
-    })
-    this.$axios.get('/saleprice').then((res)=>{
-      if(res.status === 200) {
-        this.saleprice= res.data.saleprice
-      }
-    })
-    this.$axios.get('/time').then((res)=>{
-      if(res.status === 200) {
-        this.time= res.data.time
-      }
-    })
-    this.$axios.get('/img').then((res)=>{
-      if(res.status === 200) {
-        this.img= res.data.img
-      }
-    })
-
-
-
-  }
-  }
   
 
+<script>
+export default {
+    
+}
 </script>
  
 <style scoped>

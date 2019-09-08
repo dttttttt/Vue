@@ -8,16 +8,20 @@
     <div class="button">
         <div class="btn">
             <span id= "ic" class="iconfont">&#xe604;</span> 
-            <span class="btn-text">搜索饿了么商家、商品名称</span>
+            <span class="btn-text" @click="goto">搜索饿了么商家、商品名称 </span>
         </div>
+        
     </div>
 </div>
   
 </template>
-
 <script>
 export default {
-    
+       methods:{
+           goto(){
+               this.$router.push('/homesearch')
+           }
+       }
 }
 </script>
  
